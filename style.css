@@ -23,6 +23,7 @@ input:focus {
 :root {
     --body-bg: rgb(29, 47, 54);
     --main-bg: rgb(38, 70, 83);
+    --main-bg-hover: rgb(35, 63, 75);
     --main-theme-color: #2a9d8f;
     --main-theme-color-hover: #228579;
     --sub-theme-menu: #f4a261;
@@ -549,7 +550,7 @@ input:-webkit-autofill:active {
 
 .profile-links {
     border-radius: 5px;
-    margin-top: 15px;
+    margin-top: 18px;
     background-color: var(--main-bg);
     overflow: hidden;
 }
@@ -561,6 +562,7 @@ input:-webkit-autofill:active {
 }
 
 .profile-link__item:hover {
+    background-color: var(--main-bg-hover);
     border-bottom: 3px solid var(--main-theme-color) !important;
 }
 
@@ -589,3 +591,21 @@ input:-webkit-autofill:active {
 }
 
 /* ==========END PROFILE DATA========== */
+
+.profile-data__item {
+    margin-bottom: 10px;
+    margin-left: -5px;
+}
+
+.profile-bottom-border {
+    border-bottom: 1px solid var(--main-transparent-col);
+    margin-bottom: 12px;
+}
+
+.tb {
+    font-weight: 400;
+}
+
+.profile-data__item:last-child {
+    margin-bottom: 0px;
+}
